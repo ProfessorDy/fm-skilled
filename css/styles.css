@@ -1,0 +1,80 @@
+/* CSS Custom Properties */
+:root {
+  /* Colors */
+  --color-1: hsl(234, 25%, 52%);
+  --color-2: hsl(233, 54%, 16%);
+  --color-3: hsl(232, 10%, 56%);
+  --color-4: hsl(341, 92%, 62%);
+  --color-5: hsl(341, 100%, 83%);
+  --white: hsl(0, 0%, 100%);
+  --gradient1: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+  --gradient2: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 1.75rem;
+  color: var(--color-3);
+}
+
+/* COMPONENTS */
+/* Heading  */
+.heading {
+  font-weight: 800;
+  color: var(--color-2);
+}
+.xl {
+  font-size: 3.5rem;
+  line-height: 4.375rem;
+}
+.l {
+  font-size: 2.5rem;
+  line-height: 3.8125rem;
+}
+.m {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.s {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+/* Body */
+.medium {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.small {
+  font-weight: 700;
+  font-size: 1rem;
+}
+/* Buttons */
+.btn {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0.87rem 2rem;
+  border-radius: 1.75rem;
+}
+.btn-1 {
+  background-color: var(--color-2);
+}
+.btn-1:hover,
+.btn-1:focus {
+  background-color: var(--color-1);
+}
+.btn-2 {
+  padding: 1.94rem 2rem;
+  background-color: var(--gradient1);
+  border-radius: 1.96875rem;
+}
+.btn-2:hover,
+.btn-2:focus {
+  opacity: 0.5;
+}
+.btn3 {
+  background-color: var(--gradient2);
+}
+.btn-3:hover,
+.btn-3:focus {
+  opacity: 0.5;
+}
