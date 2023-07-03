@@ -42,26 +42,11 @@ body {
 
 /* COMPONENTS */
 /* Heading  */
-.heading {
+.title {
   font-weight: 800;
   color: var(--color-2);
 }
-.xl {
-  font-size: 3.5rem;
-  line-height: 4.375rem;
-}
-.l {
-  font-size: 2.5rem;
-  line-height: 3.8125rem;
-}
-.m {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-.s {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-}
+
 /* Body */
 .medium {
   font-weight: 500;
@@ -81,6 +66,7 @@ body {
   width: fit-content;
 }
 .btn-1 {
+  line-height: 1.75rem;
   background-color: var(--color-2);
 }
 .btn-1:hover,
@@ -96,6 +82,7 @@ body {
   opacity: 0.5;
 }
 .btn-3 {
+  line-height: 1.75rem;
   background-image: var(--gradient2);
 }
 .btn-3:hover,
@@ -109,6 +96,9 @@ body {
 }
 .flex {
   display: flex;
+}
+.logo {
+  width: 5.5625rem;
 }
 
 /* ****Styling**** */
@@ -124,21 +114,83 @@ body {
 .hero {
   flex-direction: column;
 }
-.logo-dark {
-  width: 5.5625rem;
-}
+
 .hero__text {
   flex-direction: column;
   gap: 1.56rem;
 }
-.hero__text--heading {
+.hero__text--title {
+  font-size: 2.5rem;
   line-height: normal;
 }
 .hero__img {
   margin: 0 auto;
 }
 
-.main {
-  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+/* Main */
+.courses {
+  flex-direction: column;
+  gap: 2.5rem;
+  background: linear-gradient(180deg, var(--white), #f0f1ff);
   padding: 0 1rem 5rem;
+}
+
+.first-card {
+  padding: 1.75rem 1.78rem;
+  color: var(--ffffff, #fff);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2rem;
+  border-radius: 0.625rem;
+  border-radius: 0.625rem;
+  background: var(
+    --gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+}
+.card {
+  position: relative;
+  border-radius: 0.625rem;
+  background: var(--ffffff, #fff);
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  padding: 3.5rem 1.75rem 2rem;
+}
+.card__img {
+  width: 3.5rem;
+  aspect-ratio: 1;
+  position: absolute;
+  top: -1.75rem;
+  left: 1.75rem;
+}
+.card__title {
+  font-size: 1.25rem;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.card__text {
+  margin-bottom: 1.5rem;
+}
+.card__link {
+  color: var(--color-4);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+.card__link:focus,
+.card__link:hover {
+  color: var(--color-5);
+}
+
+/* Footer */
+.footer {
+  justify-content: space-between;
+  background-color: var(--color-2);
+  padding: 2.25rem 1rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 30em) {
+}
+
+@media screen and (min-width: 61.25em) {
 }
