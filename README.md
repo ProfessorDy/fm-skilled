@@ -32,6 +32,7 @@ Users should be able to:
 
 - Imported Font from Google
 - Implemented the design system with css custom properties and some components
+- Used Mobile first approach
 
 ### Built with
 
