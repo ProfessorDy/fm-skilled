@@ -10,9 +10,33 @@
   --gradient1: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
   --gradient2: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
 }
+
+/* CSS Reset */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+/* Default Styles */
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
-  line-height: 1.75rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  font-size: 1rem;
   color: var(--color-3);
 }
 
@@ -50,10 +74,11 @@ body {
 /* Buttons */
 .btn {
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 0.87rem 2rem;
+  padding: 0.62rem 1.5rem;
   border-radius: 1.75rem;
+  width: fit-content;
 }
 .btn-1 {
   background-color: var(--color-2);
@@ -63,18 +88,57 @@ body {
   background-color: var(--color-1);
 }
 .btn-2 {
-  padding: 1.94rem 2rem;
-  background-color: var(--gradient1);
-  border-radius: 1.96875rem;
+  background-image: var(--gradient1);
+  padding: 0.94rem 2.34rem;
 }
 .btn-2:hover,
 .btn-2:focus {
   opacity: 0.5;
 }
-.btn3 {
-  background-color: var(--gradient2);
+.btn-3 {
+  background-image: var(--gradient2);
 }
 .btn-3:hover,
 .btn-3:focus {
   opacity: 0.5;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+/* ****Styling**** */
+/* Header*/
+.header {
+  padding: 1rem 1rem 0;
+}
+.header__nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.38rem;
+}
+.hero {
+  flex-direction: column;
+}
+.logo-dark {
+  width: 5.5625rem;
+}
+.hero__text {
+  flex-direction: column;
+  gap: 1.56rem;
+}
+.hero__text--heading {
+  line-height: normal;
+}
+.hero__img {
+  margin: 0 auto;
+}
+
+.main {
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  padding: 0 1rem 5rem;
 }
