@@ -246,7 +246,7 @@ footer {
 
   /* Main */
   main {
-    padding: 1.5rem 2.5rem 5.38rem;
+    padding: 1.5rem max(3vw, 2.5rem) 5.38rem;
   }
   .courses {
     width: 100%;
@@ -257,14 +257,12 @@ footer {
   }
 
   .first-card {
-    width: 50%;
-    max-width: 20rem;
+    width: min(20rem, 100%);
     padding: 3.5rem 2rem;
     margin-top: 2.5rem;
   }
   .card {
-    width: 50%;
-    max-width: 20rem;
+    width: min(20rem, 100%);
     margin-top: 2.5rem;
   }
 
