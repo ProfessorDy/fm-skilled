@@ -85,7 +85,7 @@ body {
 
 .wrapper {
   position: relative;
-  max-width: 1440px;
+  max-width: 70rem;
   margin: 0 auto;
 }
 .flex {
@@ -130,11 +130,13 @@ body {
 }
 
 /* Main */
+main {
+  background: linear-gradient(180deg, var(--white), #f0f1ff);
+  padding: 0 1rem 5rem;
+}
 .courses {
   flex-direction: column;
   gap: 2.5rem;
-  background: linear-gradient(180deg, var(--white), #f0f1ff);
-  padding: 0 1rem 5rem;
 }
 
 .first-card {
@@ -184,10 +186,12 @@ body {
 }
 
 /* Footer */
-.footer {
-  justify-content: space-between;
+footer {
   background-color: var(--color-2);
   padding: 2.25rem 1rem;
+}
+.footer {
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -241,13 +245,15 @@ body {
   }
 
   /* Main */
+  main {
+    padding: 1.5rem 2.5rem 5.38rem;
+  }
   .courses {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.69rem;
-    padding: 1.5rem 2.5rem 5.38rem;
   }
 
   .first-card {
@@ -282,11 +288,8 @@ body {
   }
 
   /* Footer */
-  .footer {
-    justify-content: space-between;
-    background-color: var(--color-2);
+  footer {
     padding: 2.25rem 2.5rem;
-    align-items: center;
   }
 }
 
@@ -314,7 +317,7 @@ body {
   /* ****Styling**** */
   /* Header*/
   .header {
-    padding: 1.5rem 10.31rem 0;
+    padding: 1.5rem 0 0;
   }
   .header__nav {
     margin-bottom: 14.13rem;
@@ -347,9 +350,8 @@ body {
   }
 
   /* Main */
-  .courses {
-    padding: 1.5rem 10.31rem 8.75rem;
-    justify-content: space-between;
+  main {
+    padding: 1.5rem 0 8.75rem;
   }
 
   .first-card {
@@ -381,10 +383,5 @@ body {
   .card__link:focus,
   .card__link:hover {
     color: var(--color-5);
-  }
-
-  /* Footer */
-  .footer {
-    padding: 2.35rem 10.31rem;
   }
 }
